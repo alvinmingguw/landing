@@ -159,7 +159,7 @@ footer a{color:var(--accent);text-decoration:none}
         <div class="svc-body-inner">
           <div id="gki-cards" class="sgrid"></div>
           <div class="svc-footer" id="gki-footer"></div>
-          <div class="svc-footer"><a href="https://gkiperumnas.alvinmingguw.biz.id" target="_blank">Open App →</a></div>
+          <div class="svc-footer"><a href="https://connect.gkiperumnas.org" target="_blank">Open App →</a></div>
         </div>
       </div>
     </div>
@@ -170,14 +170,14 @@ footer a{color:var(--accent);text-decoration:none}
   <!-- APPS & SERVICES -->
   <div class="sec-title" id="apps">🚀 My Apps & Services</div>
   <div class="apps-grid">
-    <a href="https://gkiperumnas.alvinmingguw.biz.id" target="_blank" class="acard">
+    <a href="https://connect.gkiperumnas.org" target="_blank" class="acard">
       <span class="aicon">⛪</span><div><strong>GKI Connect</strong><span>Church & community platform</span></div>
     </a>
     <a href="https://gkiperumnas-dev.alvinmingguw.biz.id" target="_blank" class="acard">
       <span class="aicon">🧪</span><div><strong>GKI Dev</strong><span>Development environment</span></div>
     </a>
-    <a href="https://beszel.alvinmingguw.biz.id" target="_blank" class="acard">
-      <span class="aicon">📊</span><div><strong>Beszel Monitor</strong><span>Server monitoring</span></div>
+    <a href="https://dokploy.alvinmingguw.biz.id" target="_blank" class="acard">
+      <span class="aicon">🚢</span><div><strong>Dokploy</strong><span>Self-hosted PaaS</span></div>
     </a>
     <a href="https://cinelog.alvinmingguw.biz.id" target="_blank" class="acard">
       <span class="aicon">🎬</span><div><strong>Cinelog</strong><span>Cinema log tracker</span></div>
@@ -199,9 +199,6 @@ footer a{color:var(--accent);text-decoration:none}
     </a>
     <a href="https://n8n.alvinmingguw.biz.id" target="_blank" class="acard">
       <span class="aicon">🔁</span><div><strong>n8n</strong><span>Workflow automation</span></div>
-    </a>
-    <a href="https://waha.alvinmingguw.biz.id" target="_blank" class="acard">
-      <span class="aicon">💬</span><div><strong>WAHA WhatsApp</strong><span>WhatsApp API gateway</span></div>
     </a>
     <a href="https://security-lab.alvinmingguw.biz.id" target="_blank" class="acard">
       <span class="aicon">🛡️</span><div><strong>Security Lab</strong><span>Security testing</span></div>
@@ -243,7 +240,7 @@ async function loadHealth(){
   const cardsEl = document.getElementById('gki-cards');
   const footerEl = document.getElementById('gki-footer');
   try {
-    const r = await fetch('https://gkiperumnas.alvinmingguw.biz.id/api/integrations/health');
+    const r = await fetch('https://connect.gkiperumnas.org/api/integrations/health');
     const d = await r.json();
     const failed = d.failed || [];
     const svc = d.services || {};
